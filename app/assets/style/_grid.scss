@@ -1,0 +1,23 @@
+//container
+
+@mixin pad-1199 {
+  @media screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin phone-767 {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin phone-374 {
+  @media screen and (max-width: 374px) {
+    @content;
+  }
+} ;
+
+.container{
+  @include flex;
+}

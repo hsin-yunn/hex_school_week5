@@ -1,7 +1,8 @@
 "use strict";
 
-console.log('Hello!');
 $(document).ready(function () {
-  console.log('HesSchool Hello!');
+  var pathname = window.location.pathname;
+  console.log('.nav-bar__list-item >.nav-bar__item-link[href="' + pathname + '"]');
+  $('.nav-bar__list-item > .nav-bar__item-link[href="' + pathname + '"]').parent().addClass('active');
 });
 //# sourceMappingURL=all.js.map

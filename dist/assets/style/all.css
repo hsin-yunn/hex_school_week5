@@ -130,26 +130,6 @@ img {
   max-width: 100%;
   height: auto; }
 
-body {
-  font-family: 'Roboto', 'Noto Sans', sans-serif;
-  line-height: 1.5; }
-
-a {
-  display: block;
-  text-decoration: none; }
-
-img {
-  max-width: 100%;
-  height: auto; }
-
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://example.com/MaterialIcons-Regular.eot);
-  /* For IE6-8 */
-  src: local("Material Icons"), local("MaterialIcons-Regular"); }
-
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.2s; }
@@ -328,8 +308,8 @@ img {
   100% {
     transform: translate(19px, 0); } }
 
-.container {
-  display: flex; }
+.main {
+  width: calc(100vw - 296px); }
 
 :root {
   --white: #ffffff;
@@ -343,6 +323,9 @@ img {
   text-indent: 101%;
   overflow: hidden;
   white-space: nowrap; }
+
+.bold {
+  font-weight: bold; }
 
 /* font size */
 .text-sm {
@@ -371,6 +354,33 @@ img {
 
 .text-6xl {
   font-size: 3rem; }
+
+body {
+  font-family: 'Roboto', 'Noto Sans', sans-serif;
+  line-height: 1.5; }
+
+a {
+  display: block;
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+p {
+  line-height: 1.5; }
+
+button {
+  border: none;
+  background-color: transparent; }
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"); }
 
 .nav-bar {
   padding: 32px;
@@ -446,5 +456,94 @@ img {
     color: var(--gray-600); }
     .user-avatar .user-avatar__content .user-avatar__content-text:nth-child(1) {
       margin-top: 0; }
+
+.app-bar {
+  display: flex;
+  align-items: center;
+  padding: 32px; }
+  .app-bar .app-bar__title {
+    font-size: 1.5rem;
+    line-height: 29px;
+    font-weight: bold;
+    color: var(--gray-900); }
+  .app-bar .app-bar__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 48px;
+    width: 100%; }
+    .app-bar .app-bar__content:nth-child(1) {
+      margin-left: 0; }
+
+.ans-button {
+  display: flex;
+  align-items: center; }
+  .ans-button:hover .ans-button__icon {
+    color: var(--gray-900); }
+  .ans-button:hover .ans-button__text {
+    color: var(--success); }
+  .ans-button .ans-button__icon {
+    transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    font-size: 1.5rem;
+    color: var(--success); }
+  .ans-button .ans-button__text {
+    transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    margin-left: 8px;
+    font-size: 1rem;
+    color: var(--gray-900); }
+    .ans-button .ans-button__text:nth-child(1) {
+      margin-left: 0; }
+
+.icon-button-list {
+  display: flex;
+  align-items: center; }
+  .icon-button-list .icon-button-list__button {
+    margin-left: 24px;
+    cursor: pointer; }
+    .icon-button-list .icon-button-list__button:nth-child(1) {
+      margin-left: 0; }
+    .icon-button-list .icon-button-list__button:hover .icon-button-list__button-icon {
+      color: var(--success); }
+    .icon-button-list .icon-button-list__button .icon-button-list__button-icon {
+      transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      font-size: 1.5rem;
+      color: var(--gray-900); }
+
+.ans-model .ans-model-content .ans-model-header {
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.ans-model .ans-model-content .ans-model__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--gray-900); }
+
+.ans-model .ans-model-content .ans-model__close-btn {
+  transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  padding: 0;
+  font-size: 1.5rem;
+  color: var(--gray-900); }
+  .ans-model .ans-model-content .ans-model__close-btn:hover {
+    color: var(--success); }
+
+.ans-model .ans-model-content .ans-model-body {
+  padding: 0 32px; }
+
+.ans-model .ans-model-content .ans-model-footer {
+  padding: 16px 32px; }
 
 /*# sourceMappingURL=all.css.map */

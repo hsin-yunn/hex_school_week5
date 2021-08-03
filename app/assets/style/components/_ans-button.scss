@@ -1,0 +1,23 @@
+.ans-button {
+  @include flex;
+  @include flex_align;
+  &:hover {
+    .ans-button__icon {
+      color: var(--gray-900);
+    }
+    .ans-button__text {
+      color: var(--success);
+    }
+  }
+  .ans-button__icon {
+    @include ts;
+    font-size: $font-xl;
+    color: var(--success);
+  }
+  .ans-button__text {
+    @include ts;
+    @include auto_margin_left(8px);
+    font-size: $base-font-size;
+    color: var(--gray-900);
+  }
+}

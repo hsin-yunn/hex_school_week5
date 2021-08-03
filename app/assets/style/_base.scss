@@ -15,11 +15,19 @@ img {
   height: auto;
 }
 
+p {
+  line-height: $base-line-height;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
   src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: local('Material Icons'),
-    local('MaterialIcons-Regular'),
+  src: local('Material Icons'), local('MaterialIcons-Regular');
 }

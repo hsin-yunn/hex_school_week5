@@ -1,0 +1,22 @@
+.app-bar {
+  @include flex;
+  @include flex_align;
+  padding: 32px;
+  .app-bar__title {
+    font-size: $font-xl;
+    line-height: 29px;
+    font-weight: bold;
+    color: var(--gray-900);
+  }
+  .app-bar__content {
+    @include flex;
+    @include flex_align;
+    @include flex_justify(space-between);
+    @include auto_margin_left(48px);
+    width: 100%;
+    .app-bar__content-left {
+    }
+    .app-bar__content-right {
+    }
+  }
+}

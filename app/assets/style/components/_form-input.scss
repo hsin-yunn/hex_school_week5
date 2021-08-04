@@ -1,5 +1,4 @@
 .form-input {
-  @include auto_margin_top(16px);
   .form-label {
     margin-bottom: 0;
     font-size: $font-s;
@@ -17,6 +16,9 @@
     box-sizing: border-box;
     &:disabled {
       background-color: var(--gray-100);
+    }
+    &:focus {
+      border: 1px solid var(--success);
     }
   }
 }

@@ -1,4 +1,5 @@
 .form-dropdown {
+  position: relative;
   .form-dropdown__btn {
     @include flex;
     @include flex_align;
@@ -16,5 +17,8 @@
       font-size: $font-xl;
       color: var(--gray-900);
     }
+  }
+  .dropdown-menu {
+    width: 100%;
   }
 }

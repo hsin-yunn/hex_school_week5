@@ -10,7 +10,7 @@ current: index
   <div class="app-bar__content">
     <div class="app-bar__content-left">
       <button
-        class="ans-button"
+        class="ans-button no-padding"
         type="button"
         data-bs-toggle="modal"
         data-bs-target="#add-admin-model"
@@ -59,121 +59,152 @@ current: index
         ></button>
       </div>
       <div class="ans-model-body">
-        <label class="form-input">
-          <p class="form-label">Name</p>
-          <input
-            type="text"
-            name="name"
-            class="input-text"
-          >
-        </label>
-        <label class="form-input">
-          <p class="form-label">Email</p>
-          <input
-            type="text"
-            name="name"
-            class="input-text"
-          >
-        </label>
-        <div class="form-dropdown">
-          <button
-            class="form-dropdown__btn"
-            type="button"
-            id="dropdownMenuButton1"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <p class="form-dropdown__placeholder"> -Choose access level-</p>
-            <i class="material-icons form-dropdown__icon">
-              expand_more
-            </i>
-          </button>
-          <ul
-            class="dropdown-menu"
-            aria-labelledby="dropdownMenuButton1"
-          >
-            <li><a
-                class="dropdown-item"
-                href="#"
-              >Action</a></li>
-            <li><a
-                class="dropdown-item"
-                href="#"
-              >Another action</a></li>
-            <li><a
-                class="dropdown-item"
-                href="#"
-              >Something else here</a></li>
-          </ul>
+        <div class="ans-model-body__content">
+          <p class="ans-model-body__content-title">Account</p>
+          <label class="form-input mt-3">
+            <p class="form-label">Name</p>
+            <input
+              type="text"
+              name="name"
+              class="input-text"
+            >
+          </label>
+          <label class="form-input mt-3">
+            <p class="form-label">Email</p>
+            <input
+              type="text"
+              name="name"
+              class="input-text"
+            >
+          </label>
         </div>
-        <div class="form-checkbox">
-          <label class="form-checkbox__wrapper">
-            <input
-              type="checkbox"
-              class="form-checkbox__input"
+        <div class="ans-model-body__content">
+          <p class="ans-model-body__content-title">Verification</p>
+          <div class="ans-chip danger mt-3">
+            <i class="material-icons ans-chip__icon">warning</i>
+            <p class="ans-chip__text bold">Unverified</p>
+          </div>
+          <button
+            class="ans-button outline-gray full-width height-51 mt-3"
+            type="button"
+            data-bs-dismiss="modal"
+          >
+            <p class="ans-button__text bold" />Send Verification Mail
+            </p>
+          </button>
+        </div>
+        <div class="ans-model-body__content">
+          <p class="ans-model-body__content-title">Account</p>
+          <div class="form-dropdown mt-3">
+            <button
+              class="form-dropdown__btn"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
             >
-            <i
-              class="material-icons un-checked form-checkbox__input-icon">check_box_outline_blank</i>
-            <i
-              class="material-icons checked form-checkbox__input-icon">check_box</i>
-            <p class="form-checkbox__input-text">Lecture</p>
-          </label>
-          <label class="form-checkbox__wrapper">
-            <input
-              type="checkbox"
-              class="form-checkbox__input"
+              <p class="form-dropdown__placeholder"> -Choose access level-</p>
+              <i class="material-icons form-dropdown__icon">
+                expand_more
+              </i>
+            </button>
+            <ul
+              class="dropdown-menu"
+              aria-labelledby="dropdownMenuButton1"
             >
-            <i
-              class="material-icons un-checked form-checkbox__input-icon">check_box_outline_blank</i>
-            <i
-              class="material-icons checked form-checkbox__input-icon">check_box</i>
-            <p class="form-checkbox__input-text">Lecture</p>
-          </label>
-          <label class="form-checkbox__wrapper">
-            <input
-              type="checkbox"
-              class="form-checkbox__input"
-            >
-            <i
-              class="material-icons un-checked form-checkbox__input-icon">check_box_outline_blank</i>
-            <i
-              class="material-icons checked form-checkbox__input-icon">check_box</i>
-            <p class="form-checkbox__input-text">Lecture</p>
-          </label>
-          <label class="form-checkbox__wrapper">
-            <input
-              type="checkbox"
-              class="form-checkbox__input"
-            >
-            <i
-              class="material-icons un-checked form-checkbox__input-icon">check_box_outline_blank</i>
-            <i
-              class="material-icons checked form-checkbox__input-icon">check_box</i>
-            <p class="form-checkbox__input-text">Lecture</p>
-          </label>
-          <label class="form-checkbox__wrapper">
-            <input
-              type="checkbox"
-              class="form-checkbox__input"
-            >
-            <i
-              class="material-icons un-checked form-checkbox__input-icon">check_box_outline_blank</i>
-            <i
-              class="material-icons checked form-checkbox__input-icon">check_box</i>
-            <p class="form-checkbox__input-text">Lecture</p>
-          </label>
+              <li><a
+                  class="dropdown-item"
+                  href="#"
+                >Action</a></li>
+              <li><a
+                  class="dropdown-item"
+                  href="#"
+                >Another action</a></li>
+              <li><a
+                  class="dropdown-item"
+                  href="#"
+                >Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="ans-model-body__content">
+          <p class="ans-model-body__content-title">Account</p>
+          <div class="form-checkbox mt-3">
+            <label class="form-checkbox__wrapper">
+              <input
+                type="checkbox"
+                class="form-checkbox__input"
+              >
+              <i
+                class="material-icons un-checked form-checkbox__input-icon">check_box_outline_blank</i>
+              <i
+                class="material-icons checked form-checkbox__input-icon">check_box</i>
+              <p class="form-checkbox__input-text">Lecture</p>
+            </label>
+            <label class="form-checkbox__wrapper">
+              <input
+                type="checkbox"
+                class="form-checkbox__input"
+              >
+              <i
+                class="material-icons un-checked form-checkbox__input-icon">check_box_outline_blank</i>
+              <i
+                class="material-icons checked form-checkbox__input-icon">check_box</i>
+              <p class="form-checkbox__input-text">Lecture</p>
+            </label>
+            <label class="form-checkbox__wrapper">
+              <input
+                type="checkbox"
+                class="form-checkbox__input"
+              >
+              <i
+                class="material-icons un-checked form-checkbox__input-icon">check_box_outline_blank</i>
+              <i
+                class="material-icons checked form-checkbox__input-icon">check_box</i>
+              <p class="form-checkbox__input-text">Lecture</p>
+            </label>
+            <label class="form-checkbox__wrapper">
+              <input
+                type="checkbox"
+                class="form-checkbox__input"
+              >
+              <i
+                class="material-icons un-checked form-checkbox__input-icon">check_box_outline_blank</i>
+              <i
+                class="material-icons checked form-checkbox__input-icon">check_box</i>
+              <p class="form-checkbox__input-text">Lecture</p>
+            </label>
+            <label class="form-checkbox__wrapper">
+              <input
+                type="checkbox"
+                class="form-checkbox__input"
+              >
+              <i
+                class="material-icons un-checked form-checkbox__input-icon">check_box_outline_blank</i>
+              <i
+                class="material-icons checked form-checkbox__input-icon">check_box</i>
+              <p class="form-checkbox__input-text">Lecture</p>
+            </label>
+          </div>
         </div>
       </div>
       <div class="ans-model-footer">
-        <button
-          type="button"
-          class="btn btn-secondary"
-          data-bs-dismiss="modal"
-        >Cancel</button>
-        <button
-          type="button"
-          class="btn btn-primary"
-        >Add</button>
+        <div class="ans-button-group justify-content-end">
+          <button
+            class="ans-button outline"
+            type="button"
+            data-bs-dismiss="modal"
+          >
+            <p class="ans-button__text bold" />Cancel</p>
+          </button>
+          <button
+            class="ans-button primary"
+            type="button"
+            data-bs-dismiss="modal"
+          >
+            <p class="ans-button__text bold">Add</p>
+          </button>
+        </div>
       </div>
     </div>
   </div>

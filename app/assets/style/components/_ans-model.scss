@@ -1,7 +1,7 @@
 .ans-model {
   .ans-model-content {
     .ans-model-header {
-      padding: 32px;
+      padding: 32px 32px 7.5px 32px;
       @include flex;
       @include flex_align;
       @include flex_justify(space-between);
@@ -22,6 +22,19 @@
     }
     .ans-model-body {
       padding: 0 32px;
+      .ans-model-body__content {
+        padding: 24.5px 0;
+        border-top: 1px solid var(--gray-400);
+        &:first-child {
+          border-top: none;
+        }
+        .ans-model-body__content-title {
+          font-size: $font-l;
+          line-height: 24px;
+          font-weight: bold;
+          color: var(--gray-900);
+        }
+      }
     }
     .ans-model-footer {
       padding: 16px 32px;

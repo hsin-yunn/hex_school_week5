@@ -1,0 +1,7 @@
+.ans-button-group {
+  @include flex;
+  @include flex_align;
+  .ans-button {
+    @include auto_margin_left(15px);
+  }
+}

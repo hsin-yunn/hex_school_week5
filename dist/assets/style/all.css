@@ -374,6 +374,9 @@ button {
   border: none;
   background-color: transparent; }
 
+label {
+  display: block; }
+
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
@@ -545,5 +548,69 @@ button {
 
 .ans-model .ans-model-content .ans-model-footer {
   padding: 16px 32px; }
+
+.form-checkbox .form-checkbox__wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 16px; }
+  .form-checkbox .form-checkbox__wrapper:nth-child(1) {
+    margin-top: 0; }
+  .form-checkbox .form-checkbox__wrapper .form-checkbox__input {
+    display: none; }
+    .form-checkbox .form-checkbox__wrapper .form-checkbox__input:not(:checked) ~ .un-checked {
+      display: block; }
+    .form-checkbox .form-checkbox__wrapper .form-checkbox__input:not(:checked) ~ .checked {
+      display: none; }
+  .form-checkbox .form-checkbox__wrapper .un-checked {
+    display: none; }
+  .form-checkbox .form-checkbox__wrapper .form-checkbox__input-icon {
+    font-size: 1.5rem;
+    color: var(--gray-900); }
+  .form-checkbox .form-checkbox__wrapper .form-checkbox__input-text {
+    margin-left: 8px;
+    font-size: 1rem;
+    line-height: 19px;
+    color: var(--gray-900); }
+    .form-checkbox .form-checkbox__wrapper .form-checkbox__input-text:nth-child(1) {
+      margin-left: 0; }
+
+.form-input {
+  margin-top: 16px; }
+  .form-input:nth-child(1) {
+    margin-top: 0; }
+  .form-input .form-label {
+    margin-bottom: 0;
+    font-size: 0.875rem;
+    line-height: 17px;
+    color: var(--black); }
+  .form-input .input-text {
+    margin-top: 4px;
+    width: 100%;
+    padding: 16px;
+    font-size: 1rem;
+    line-height: 19px;
+    color: var(--black);
+    border: 1px solid var(--gray-900);
+    box-sizing: border-box; }
+    .form-input .input-text:nth-child(1) {
+      margin-top: 0; }
+    .form-input .input-text:disabled {
+      background-color: var(--gray-100); }
+
+.form-dropdown .form-dropdown__btn {
+  display: flex;
+  align-items: center;
+  padding: 14px 16px 13px 16px;
+  border: 1px solid var(--gray-900);
+  box-sizing: border-box;
+  width: 100%; }
+  .form-dropdown .form-dropdown__btn .form-dropdown__placeholder {
+    font-size: 1rem;
+    line-height: 19px;
+    color: var(--gray-600); }
+  .form-dropdown .form-dropdown__btn .form-dropdown__icon {
+    margin-left: auto;
+    font-size: 1.5rem;
+    color: var(--gray-900); }
 
 /*# sourceMappingURL=all.css.map */

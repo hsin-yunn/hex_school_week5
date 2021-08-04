@@ -1,0 +1,29 @@
+.form-checkbox {
+  .form-checkbox__wrapper {
+    @include flex;
+    @include flex_align;
+    @include auto_margin_top(16px);
+    .form-checkbox__input {
+      display: none;
+      &:not(:checked) ~ .un-checked {
+        display: block;
+      }
+      &:not(:checked) ~ .checked {
+        display: none;
+      }
+    }
+    .un-checked {
+      display: none;
+    }
+    .form-checkbox__input-icon {
+      font-size: $font-xl;
+      color: var(--gray-900);
+    }
+    .form-checkbox__input-text {
+      @include auto_margin_left(8px);
+      font-size: $base-font-size;
+      line-height: 19px;
+      color: var(--gray-900);
+    }
+  }
+}

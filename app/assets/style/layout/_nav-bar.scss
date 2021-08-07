@@ -1,6 +1,9 @@
 .nav-bar {
+  @include flex;
+  @include flex_justify(space-between);
+  flex-direction: column;
   padding: 32px;
-  height: 100vh;
+  min-height: 100vh;
   width: 296px;
   box-sizing: border-box;
   background-color: var(--gray-100);
@@ -23,8 +26,8 @@
           color: var(--success);
         }
       }
-      &.active{
-        &::before{
+      &.active {
+        &::before {
           position: absolute;
           content: '';
           display: block;
@@ -34,7 +37,7 @@
           height: 32px;
           background-color: var(--success);
         }
-        .nav-bar__item-link{
+        .nav-bar__item-link {
           color: var(--success);
         }
       }
@@ -50,11 +53,5 @@
         margin-right: 16px;
       }
     }
-  }
-  .nav-bar__content {
-    @include flex;
-    @include flex_justify(space-between);
-    flex-direction: column;
-    min-height: calc(100vh - 104px);
   }
 }

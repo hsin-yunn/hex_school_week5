@@ -1,5 +1,12 @@
 $(document).ready(() => {
   let pathname = window.location.pathname;
-  console.log('.nav-bar__list-item >.nav-bar__item-link[href="'+pathname+'"]');
-	$('.nav-bar__list-item > .nav-bar__item-link[href="'+pathname+'"]').parent().addClass('active');
+  $('.nav-bar__list-item > .nav-bar__item-link[href="' + pathname + '"]')
+    .parent()
+    .addClass('active');
+
+  $('.slide-content').hide();
+  $('.slide-button').click(function () {
+    $('.slide-button__icon').toggleClass('active');
+    $('.slide-content').slideToggle();
+  });
 });

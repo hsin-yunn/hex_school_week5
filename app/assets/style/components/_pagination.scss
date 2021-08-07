@@ -1,0 +1,49 @@
+.pagination {
+  border: 1px solid var(--success);
+  border-radius: 2px;
+  .page-item {
+    @include ts;
+    @include flex;
+    @include flex_align;
+    height: 32px;
+    box-sizing: border-box;
+    border-left: 1px solid var(--success);
+    &:first-child,
+    &:last-child {
+      .page-link {
+        padding: 4px;
+      }
+    }
+    &:first-child {
+      border: none;
+    }
+    &:hover {
+      background-color: var(--success);
+      .page-link,
+      .page-icon {
+        color: var(--white);
+      }
+    }
+    &.active {
+      background-color: var(--success);
+      .page-link {
+        color: var(--white);
+      }
+    }
+    .page-link {
+      @include ts;
+      @include flex;
+      @include flex_align;
+      padding: 4px 11.5px;
+      font-size: $base-font-size;
+      color: var(--gray-900);
+      border: none;
+      background-color: transparent;
+    }
+    .page-icon {
+      @include ts;
+      font-size: $font-xl;
+      color: var(--success);
+    }
+  }
+}

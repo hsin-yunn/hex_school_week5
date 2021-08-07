@@ -3,6 +3,7 @@
   @include flex_align;
   .icon-button-list__button {
     @include auto_margin_left(24px);
+    @include flex_center;
     cursor: pointer;
     &:hover {
       .icon-button-list__button-icon {

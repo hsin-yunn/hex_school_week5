@@ -3,6 +3,7 @@
   @include ts;
   padding: 8px 32px;
   box-sizing: border-box;
+  border-radius: 2px;
   &:hover {
     .ans-button__icon {
       color: var(--gray-900);
@@ -49,6 +50,19 @@
       .ans-button__text {
         color: var(--success);
       }
+    }
+  }
+  &.disabled {
+    border: 1px solid var(--gray-400);
+    cursor: not-allowed;
+    .ans-button__text {
+      color: var(--gray-400);
+    }
+  }
+  &.danger {
+    border: 1px solid var(--danger);
+    .ans-button__text {
+      color: var(--danger);
     }
   }
   .ans-button__icon {

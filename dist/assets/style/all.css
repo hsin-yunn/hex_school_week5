@@ -499,21 +499,13 @@ input[type='color']:focus {
 
 .app-bar {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   padding: 32px; }
   .app-bar .app-bar__title {
     font-size: 1.5rem;
     line-height: 29px;
     font-weight: bold;
     color: var(--gray-900); }
-  .app-bar .app-bar__content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 48px;
-    width: 100%; }
-    .app-bar .app-bar__content:nth-child(1) {
-      margin-left: 0; }
 
 .ans-button-group {
   display: flex;
@@ -824,6 +816,40 @@ input[type='color']:focus {
       font-size: 1.5rem;
       color: var(--success); }
 
+.list-group {
+  width: 320px; }
+  .list-group .list-group-item {
+    transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    padding: 12px;
+    border-color: var(--gray-400);
+    cursor: pointer; }
+    .list-group .list-group-item.active {
+      background-color: var(--gray-100); }
+    .list-group .list-group-item:hover {
+      background-color: var(--gray-100); }
+    .list-group .list-group-item .list-group-item__subtitle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.725rem;
+      line-height: 15px;
+      color: var(--gray-900); }
+      .list-group .list-group-item .list-group-item__subtitle.gray {
+        color: var(--gray-600); }
+    .list-group .list-group-item .list-group-item__title {
+      display: block;
+      font-size: 1rem;
+      line-height: 19px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 70%;
+      font-weight: bold;
+      color: var(--gray-900); }
+
 .admin-card {
   display: flex;
   align-items: flex-start; }
@@ -875,5 +901,19 @@ input[type='color']:focus {
     color: var(--success); }
     .slide-button .slide-button__icon.active {
       transform: rotate(180deg); }
+
+.assignment-comment-title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between; }
+  .assignment-comment-title .assignment-comment-title__number {
+    font-size: 0.725rem;
+    line-height: 15px;
+    color: var(--gray-600); }
+
+.assignment-content {
+  margin-top: 6px; }
+  .assignment-content:nth-child(1) {
+    margin-top: 0; }
 
 /*# sourceMappingURL=all.css.map */

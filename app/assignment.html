@@ -16,13 +16,13 @@ current: assignment
     </span>
   </button>
   <ul class="icon-button-list ms-auto">
-    <li class="icon-button-list__button">
-      <span class="material-icons icon-button-list__button-icon">
+    <li class="icon-button__button">
+      <span class="material-icons icon-button__button-icon">
         search
       </span>
     </li>
-    <li class="icon-button-list__button">
-      <span class="material-icons icon-button-list__button-icon">
+    <li class="icon-button__button">
+      <span class="material-icons icon-button__button-icon">
         notifications_active
       </span>
     </li>
@@ -79,7 +79,7 @@ current: assignment
         </p>
       </li>
     </ul>
-    <div class="assignment-comment">
+    <div class="assignment-comment ms-3">
       <div class="assignment-comment__header">
         <div>
           <p class="assignment-comment__subtitle">Chapter Assignment 2 /
@@ -88,13 +88,82 @@ current: assignment
             thanks!</p>
         </div>
         <button
-          class="ans-button p-0"
+          class="icon-button__button p-0"
           type="button"
         >
-          <span class="material-icons ans-button__icon">
+          <span class="material-icons icon-button__button-icon">
             expand_more
           </span>
         </button>
+      </div>
+      <div class="assignment-comment__body">
+        <div class="assignment-comment__body-item">
+          <div class="user-avatar">
+            <div
+              class="user-avatar__img"
+              style="background-image: url('assets/images/andychen.jpeg');"
+            ></div>
+            <div class="user-avatar__content ms-2">
+              <p class="user-avatar__content-name">Emily Wang</p>
+              <p class="user-avatar__content-text">10:38 AM (4 hours ago)</p>
+            </div>
+          </div>
+          <div class="assignment-comment__body-item__content has-border">
+            <p class="body-item__content-text">Hi Teacher, the attached file is
+              my homework of chapter 2. And here comes a question: Why in the
+              following code the height of the div is bigger than the height of
+              the <span class="green">img</span> ? There is a gap below the
+              image, but it doesn’t seems to
+              be a padding/margin.<br> What is the gap or extra space below
+              image?</p>
+            <div class="ans-attach-list mt-3">
+              <div class="ans-attach">
+                <i class="ans-attaches__icon material-icons">expand_more</i>
+                <p class="ans-attach__text">HW-2-David.zip</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="assignment-comment__body-item">
+          <div class="assignment-comment__body-item__tools">
+            <div class="user-avatar">
+              <div
+                class="user-avatar__img"
+                style="background-image: url('assets/images/andychen.jpeg');"
+              ></div>
+              <div class="user-avatar__content ms-2">
+                <p class="user-avatar__content-name">Emily Wang</p>
+                <p class="user-avatar__content-text">10:38 AM (4 hours ago)</p>
+              </div>
+            </div>
+            <ul class="icon-button-list ms-auto">
+              <li class="icon-button__button">
+                <span class="material-icons icon-button__button-icon">
+                  search
+                </span>
+              </li>
+              <li class="icon-button__button">
+                <span class="material-icons icon-button__button-icon">
+                  notifications_active
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="assignment-comment__body-item__content">
+            <p class="body-item__content-text">Hi David, by default, an image is
+              rendered inline, like a letter so it sits on the same line that a,
+              b, c and d sit on. There is space below that line for the
+              descenders you find on letters like g, j, p and q.
+            </p>
+            <br>
+            <p>You can:</p>　
+            <br>
+            • adjust the vertical-align of the image to
+            position it elsewhere (e.g. the middle ) or 　
+            • change the display
+            so it isn’t inline.
+          </div>
+        </div>
       </div>
     </div>
   </div>

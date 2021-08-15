@@ -1,19 +1,20 @@
 .icon-button-list {
   @include flex;
   @include flex_align;
-  .icon-button-list__button {
+  .icon-button__button {
     @include auto_margin_left(24px);
-    @include flex_center;
-    cursor: pointer;
-    &:hover {
-      .icon-button-list__button-icon {
-        color: var(--success);
-      }
+  }
+}
+.icon-button__button {
+  cursor: pointer;
+  &:hover {
+    .icon-button__button-icon {
+      color: var(--success);
     }
-    .icon-button-list__button-icon {
-      @include ts;
-      font-size: $font-xl;
-      color: var(--gray-900);
-    }
+  }
+  .icon-button__button-icon {
+    @include ts;
+    font-size: $font-xl;
+    color: var(--gray-900);
   }
 }

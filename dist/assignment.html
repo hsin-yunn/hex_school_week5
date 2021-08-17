@@ -19,7 +19,7 @@
     crossorigin="anonymous"
   >
   <link
-    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
     rel="stylesheet"
   >
   <link
@@ -189,7 +189,7 @@
             </div>
           </div>
           <div class="assignment-comment__body-item__content has-border">
-            <p class="body-item__content-text">Hi Teacher, the attached file is
+            <p class="content-text">Hi Teacher, the attached file is
               my homework of chapter 2. And here comes a question: Why in the
               following code the height of the div is bigger than the height of
               the <span class="green">img</span> ? There is a gap below the
@@ -218,19 +218,19 @@
             </div>
             <ul class="icon-button-list ms-auto">
               <li class="icon-button__button">
-                <span class="material-icons icon-button__button-icon">
-                  search
+                <span class="material-icons-outlined icon-button__button-icon">
+                  grade
                 </span>
               </li>
               <li class="icon-button__button">
                 <span class="material-icons icon-button__button-icon">
-                  notifications_active
+                  edit
                 </span>
               </li>
             </ul>
           </div>
           <div class="assignment-comment__body-item__content">
-            <p class="body-item__content-text">Hi David, by default, an image is
+            <p class="content-text">Hi David, by default, an image is
               rendered inline, like a letter so it sits on the same line that a,
               b, c and d sit on. There is space below that line for the
               descenders you find on letters like g, j, p and q.
@@ -238,11 +238,61 @@
             <br>
             <p>You can:</p>　
             <br>
-            • adjust the vertical-align of the image to
-            position it elsewhere (e.g. the middle ) or 　
-            • change the display
-            so it isn’t inline.
+            <ul class="content-list">
+              <li class="content-list__item content-text">adjust the
+                <span class="green">vertical-align</span> of the image to
+                position it elsewhere (e.g. the <span
+                  class="green">middle</span> ) or
+              </li>
+              <li class="content-list__item content-text">change the <span
+                  class="green"
+                >display</span>
+                so it isn’t inline.</li>
+            </ul>
           </div>
+        </div>
+      </div>
+      <div class="assignment-comment__footer d-flex align-items-center mt-3">
+        <ul class="icon-button-list">
+          <li class="icon-button__button">
+            <span class="material-icons icon-button__button-icon">
+              search
+            </span>
+          </li>
+          <li class="icon-button__button">
+            <span class="material-icons icon-button__button-icon">
+              notifications_active
+            </span>
+          </li>
+        </ul>
+        <div class="ans-button-group justify-content-end ms-auto">
+          <button class="ans-button outline">
+            <p class="ans-button__text bold" />Mark as read</p>
+          </button>
+          <button class="ans-button primary">
+            <p class="ans-button__text bold">Reply</p>
+          </button>
+        </div>
+      </div>
+      <div class="assignmant-comment__reply">
+        <div class="assignmant-comment__reply-tools">
+          <ul class="icon-button-list ms-auto">
+            <li class="icon-button__button">
+              <a class="material-icons icon-button__button-icon">
+                link
+              </a>
+            </li>
+            <li class="icon-button__button">
+              <a class="material-icons icon-button__button-icon">
+                format_list_numbered
+              </a>
+            </li>
+            <li class="icon-button__button">
+              <a class="material-icons icon-button__button-icon">
+                format_list_numbered
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

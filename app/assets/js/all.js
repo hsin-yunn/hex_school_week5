@@ -3,7 +3,7 @@ $(document).ready(() => {
   $('.nav-bar__list-item > .nav-bar__item-link[href="' + pathname + '"]')
     .parent()
     .addClass('active');
-  // console.log(pathname, 'pathname');
+  console.log(pathname, 'pathname');
 
   $('.slide-content').hide();
   $('.slide-button').click(function () {

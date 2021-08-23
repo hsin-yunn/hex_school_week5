@@ -707,6 +707,9 @@ input[type='color']:focus {
     border: 1px solid var(--gray-900);
     box-sizing: border-box;
     width: 100%; }
+    .form-dropdown .form-dropdown__btn.no-border {
+      padding: 0;
+      border: none; }
     .form-dropdown .form-dropdown__btn .form-dropdown__placeholder {
       font-size: 1rem;
       line-height: 19px;
@@ -989,15 +992,28 @@ input[type='color']:focus {
 .content-list {
   list-style: none; }
   .content-list .content-list__item {
-    padding-left: 1em;
-    text-indent: -1em; }
-    .content-list .content-list__item:before {
-      content: '';
-      display: block;
-      content: '';
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background-color: var(--gray-900); }
+    list-style-type: disc; }
+
+.assignmant-comment__reply {
+  display: none;
+  border: 1px solid var(--gray-400);
+  border-top: none; }
+  .assignmant-comment__reply .assignmant-comment__reply-tools {
+    padding: 18px 25px 19px 25px;
+    background-color: var(--gray-100);
+    border-bottom: 1px solid var(--gray-400); }
+  .assignmant-comment__reply .assignmant-comment__reply-content {
+    padding: 16px 24px; }
+    .assignmant-comment__reply .assignmant-comment__reply-content .assignmant-comment__reply-detail {
+      min-height: 196px; }
+      .assignmant-comment__reply .assignmant-comment__reply-content .assignmant-comment__reply-detail .gray-text {
+        font-size: 1rem;
+        color: var(--gray-400); }
+
+.active {
+  display: block !important; }
+
+.hide {
+  display: none !important; }
 
 /*# sourceMappingURL=all.css.map */

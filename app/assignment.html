@@ -108,7 +108,9 @@ current: assignment
               <p class="user-avatar__content-text">10:38 AM (4 hours ago)</p>
             </div>
           </div>
-          <div class="assignment-comment__body-item__content has-border">
+          <div
+            class="assignment-comment__body-item__content has-border ask-content"
+          >
             <p class="content-text">Hi Teacher, the attached file is
               my homework of chapter 2. And here comes a question: Why in the
               following code the height of the div is bigger than the height of
@@ -124,7 +126,7 @@ current: assignment
             </div>
           </div>
         </div>
-        <div class="assignment-comment__body-item">
+        <div class="assignment-comment__body-item reply-answer-js">
           <div class="assignment-comment__body-item__tools">
             <div class="user-avatar">
               <div
@@ -172,16 +174,18 @@ current: assignment
           </div>
         </div>
       </div>
-      <div class="assignment-comment__footer d-flex align-items-center mt-3">
+      <div
+        class="assignment-comment__footer d-flex align-items-center mt-3 reply-btns"
+      >
         <ul class="icon-button-list">
           <li class="icon-button__button">
             <span class="material-icons icon-button__button-icon">
-              search
+              chevron_left
             </span>
           </li>
           <li class="icon-button__button">
             <span class="material-icons icon-button__button-icon">
-              notifications_active
+              chevron_right
             </span>
           </li>
         </ul>
@@ -189,14 +193,70 @@ current: assignment
           <button class="ans-button outline">
             <p class="ans-button__text bold" />Mark as read</p>
           </button>
-          <button class="ans-button primary">
+          <button class="ans-button primary open-reply-btn">
             <p class="ans-button__text bold">Reply</p>
           </button>
         </div>
       </div>
       <div class="assignmant-comment__reply">
-        <div class="assignmant-comment__reply-tools">
-          <ul class="icon-button-list ms-auto">
+        <div class="assignmant-comment__reply-tools d-flex flex-align-center">
+          <div class="form-dropdown">
+            <button
+              class="form-dropdown__btn no-border"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <p class="form-dropdown__placeholder"> Body Text</p>
+              <i class="material-icons form-dropdown__icon">
+                arrow_drop_down
+              </i>
+            </button>
+            <ul
+              class="dropdown-menu"
+              aria-labelledby="dropdownMenuButton1"
+            >
+              <li><a
+                  class="dropdown-item"
+                  href="#"
+                >Body Text</a></li>
+              <li><a
+                  class="dropdown-item"
+                  href="#"
+                >Body Text</a></li>
+              <li><a
+                  class="dropdown-item"
+                  href="#"
+                >Body Text</a></li>
+            </ul>
+          </div>
+          <ul class="icon-button-list ms-4">
+            <li class="icon-button__button">
+              <a class="material-icons icon-button__button-icon">
+                format_bold
+              </a>
+            </li>
+            <li class="icon-button__button">
+              <a class="material-icons icon-button__button-icon">
+                format_italic
+              </a>
+            </li>
+            <li class="icon-button__button">
+              <a class="material-icons icon-button__button-icon">
+                format_list_numbered
+              </a>
+            </li>
+            <li class="icon-button__button">
+              <a class="material-icons icon-button__button-icon">
+                format_list_numbered
+              </a>
+            </li>
+            <li class="icon-button__button">
+              <a class="material-icons icon-button__button-icon">
+                image
+              </a>
+            </li>
             <li class="icon-button__button">
               <a class="material-icons icon-button__button-icon">
                 link
@@ -204,15 +264,31 @@ current: assignment
             </li>
             <li class="icon-button__button">
               <a class="material-icons icon-button__button-icon">
-                format_list_numbered
-              </a>
-            </li>
-            <li class="icon-button__button">
-              <a class="material-icons icon-button__button-icon">
-                format_list_numbered
+                link
               </a>
             </li>
           </ul>
+        </div>
+        <div class="assignmant-comment__reply-content">
+          <div class="assignmant-comment__reply-detail">
+            <p class="gray-text">Reply an answer…</p>
+          </div>
+          <div class="ans-button-group justify-content-end">
+            <button
+              class="ans-button outline close-reply-btn"
+              type="button"
+              data-bs-dismiss="modal"
+            >
+              <p class="ans-button__text bold" />Cancel</p>
+            </button>
+            <button
+              class="ans-button primary close-reply-btn"
+              type="button"
+              data-bs-dismiss="modal"
+            >
+              <p class="ans-button__text bold">Reply</p>
+            </button>
+          </div>
         </div>
       </div>
     </div>

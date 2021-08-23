@@ -7,6 +7,10 @@
     border: 1px solid var(--gray-900);
     box-sizing: border-box;
     width: 100%;
+    &.no-border {
+      padding: 0;
+      border: none;
+    }
     .form-dropdown__placeholder {
       font-size: $base-font-size;
       line-height: 19px;

@@ -11,12 +11,7 @@
     http-equiv="X-UA-Compatible"
     content="ie=edge"
   >
-  <title>
-    <%-
-      title
-      %
-    >
-  </title>
+  <title><%- title %></title>
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -37,10 +32,7 @@
   <div class="d-flex">
     <nav class="nav-bar">
       <div class="nav-bar__content">
-        <a
-          class="nav-bar__logo logo-hide"
-          href="#"
-        >
+        <a class="nav-bar__logo logo-hide" href="#">
           <h1>ANSWER</h1>
         </a>
         <ul class="nav-bar__list mt-4">
@@ -48,43 +40,36 @@
             <a
               href="#"
               class="nav-bar__item-link"
-            ><span
-                class="material-icons md-18 nav-bar__link-icon">face</span>Dashboard</a>
+            ><span class="material-icons md-18 nav-bar__link-icon">face</span>Dashboard</a>
           </li>
           <li class="nav-bar__list-item">
             <a
               href="#"
               class="nav-bar__item-link"
-            ><span
-                class="material-icons md-18 nav-bar__link-icon">face</span>Question</a>
+            ><span class="material-icons md-18 nav-bar__link-icon">face</span>Question</a>
           </li>
           <li class="nav-bar__list-item">
             <a
               href="assignment.html"
               class="nav-bar__item-link"
-            ><span
-                class="material-icons md-18 nav-bar__link-icon ">face</span>Assignment</a>
+            ><span class="material-icons md-18 nav-bar__link-icon ">face</span>Assignment</a>
           </li>
           <li class="nav-bar__list-item">
             <a
               href="#"
               class="nav-bar__item-link"
-            ><span
-                class="material-icons md-18 nav-bar__link-icon">face</span>Course</a>
+            ><span class="material-icons md-18 nav-bar__link-icon">face</span>Course</a>
           </li>
           <li class="nav-bar__list-item">
             <a
               href="/"
               class="nav-bar__item-link"
-            ><span
-                class="material-icons md-18 nav-bar__link-icon">face</span>Admin</a>
+            ><span class="material-icons md-18 nav-bar__link-icon">face</span>Admin</a>
           </li>
           <li class="nav-bar__list-item"><a
               href="#"
               class="nav-bar__item-link"
-            ><span
-                class="material-icons md-18 nav-bar__link-icon">face</span>Settings</a>
-          </li>
+            ><span class="material-icons md-18 nav-bar__link-icon">face</span>Settings</a></li>
         </ul>
       </div>
       <div class="user-avatar mt-3">
@@ -99,10 +84,7 @@
       </div>
     </nav>
     <div class="main">
-      <%-
-        contents
-        %
-      >
+      <%- contents %>
     </div>
   </div>
 

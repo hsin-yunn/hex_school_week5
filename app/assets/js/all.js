@@ -1,6 +1,6 @@
 $(document).ready(() => {
-  let pathname = window.location.pathname;
-  $('.nav-bar__list-item > .nav-bar__item-link[href="' + pathname + '"]')
+  let pathname = document.location.pathname.match(/[^\/]+$/)[0];
+  $('.nav-bar__list-item > .nav-bar__item-link[href="./' + pathname + '"]')
     .parent()
     .addClass('active');
   console.log(pathname, 'pathname');
